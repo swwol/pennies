@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="chrome=1,IE=edge" />
+	<title>New_Half_Penny29Nov</title>
+	<style>
+		body {
+			background-color: #FFFFFF;
+			margin: 0px;
+		}
+	</style>
+
+	<!-- copy these lines to your document head: -->
+
+	<meta name="viewport" content="user-scalable=no, width=1024" />
+	<!-- Custom Fonts -->
+	<style>
+    @font-face {
+        font-family: 'avenir';
+        src:              url('New_Half_Penny29Nov.wdgt.hyperesources/avenir.ttf') format('truetype'),
+            
+    }
+</style>
+	<script type="text/javascript" src="New_Half_Penny29Nov.wdgt.hyperesources/jquery-2.0.3.min.js"></script>
+	<script type="text/javascript" src="New_Half_Penny29Nov.wdgt.hyperesources/jquery.gsap.min.js"></script>
+	<script type="text/javascript" src="New_Half_Penny29Nov.wdgt.hyperesources/TweenMax.min.js"></script>
+	<script type="text/javascript" src="New_Half_Penny29Nov.wdgt.hyperesources/newExtraCodev2.js"></script>
+	<script type="text/javascript" src="New_Half_Penny29Nov.wdgt.hyperesources/pennycode.js"></script>
+
+	
+<!-- 
+Load the Apple events stored on the device. This provides access to the listener
+used below
+ -->
+<script type="text/javascript" src="AppleClasses/AppleWidget.js"> </script>
+
+<script>
+    function myCallback(hypeDocument, element, event) {
+    // Get the name of the document. This is also on line 5 of the generated javascript file. 
+    window.DocumentName = hypeDocument.documentName();
+    }
+
+    if("HYPE_eventListeners" in window === false) {
+    window.HYPE_eventListeners = Array();
+    }
+    window.HYPE_eventListeners.push({"type":"HypeDocumentLoad", "callback":myCallback});
+</script>
+
+<script type="text/javascript">
+    widget.pauseAudioVisual = function() {
+    // Go to the Quiet scene when closing a widget
+   // HYPE.documents[DocumentName].showSceneNamed("quietscene");
+    };
+
+    widget.didEnterWidgetMode = function() {
+    // When reopening the widget, go back to the first scene
+ resetCoins();
+    };
+</script>
+	
+	
+	<!-- end copy -->
+
+  </head>
+  <body>
+	<div style ="margin:auto;width:1024px">
+
+
+	
+	<!-- copy these lines to your document: -->
+
+	<div id="newhalfpenny29nov_hype_container" style="position:relative;overflow:hidden;width:1024px;height:768px;-webkit-tap-highlight-color: rgba(0,0,0,0);">
+		<script type="text/javascript" charset="utf-8" src="New_Half_Penny29Nov.wdgt.hyperesources/newhalfpenny29nov_hype_generated_script.js?11233"></script>
+	</div>
+
+	<!-- end copy -->
+
+
+	</div>
+  </body>
+</html>
